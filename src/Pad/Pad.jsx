@@ -3,8 +3,8 @@ import React from "react";
 import "./Pad.css";
 import Pad1 from "../Images/pad1.jpg";
 // import Pad2 from "../Images/pad2.jpg";
-import Pad3 from "../Images/pad3.jpg";
-import Pad4 from "../Images/pad4.jpg";
+// import Pad3 from "../Images/pad3.jpg";
+// import Pad4 from "../Images/pad4.jpg";
 import { Link } from "react-router-dom";
 
 function Pad() {
@@ -60,11 +60,11 @@ function Pad() {
           <div className="pad-description">Ultra-Absorbent Pad</div>
         </div>
         <div className="pad-card">
-        <Link to="/pads" ><img src={Pad3} alt="Pad 1" className="pad-image" /></Link>
+        <Link to="/pads" ><img src={Pad1} alt="Pad 1" className="pad-image" /></Link>
           <div className="pad-description">Eco-Friendly Pad</div>
         </div>
         <div className="pad-card">
-        <Link to="/pads" ><img src={Pad4} alt="Pad 1" className="pad-image" /></Link>
+        <Link to="/pads" ><img src={Pad1} alt="Pad 1" className="pad-image" /></Link>
           <div className="pad-description">Super-Thin Comfort Pad</div>
         </div>
       </div>
