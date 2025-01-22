@@ -1,0 +1,178 @@
+/* Container for the entire Diper section */
+.diper-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left; /* Ensure text aligns to the left */
+}
+
+/* Heading styling */
+.diper-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+  position: relative;
+}
+
+/* Line below heading */
+.diper-container h1::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #4CAF50;
+  margin-top: 10px;
+}
+
+/* Diper section bullet points */
+.diper-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.diper-section div {
+  width: 48%; /* Equal width for both sections */
+}
+
+.diper-section p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+/* Image container styling */
+.diper-image-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.diper-item {
+  width: 32%; /* Equal width for all items */
+  text-align: center; /* Center content within each item */
+}
+
+.diper-image {
+  width: 100%;
+  height: 50vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  margin: 20px 0px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image hover effect */
+.diper-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Text below each image */
+.diper-text h3 {
+  background-color: #f0f8ff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.diper-text ul {
+  text-align: left; /* Align bullet points to the left */
+  list-style-type: disc;
+  margin: 10px 0 0 20px; /* Add indentation for bullets */
+}
+
+.diper-text li {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.diper-section ul {
+  padding-left: 20px; /* Adds space before the bullets */
+  list-style-type: disc; /* Ensures bullet points are circular */
+}
+
+.diper-section li {
+  font-size: 1rem; /* Adjust the text size */
+  color: #00818a; /* Text color */
+  margin-bottom: 10px; /* Space between items */
+  line-height: 1.5; /* Improves readability */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .diper-section {
+    flex-direction: column; /* Stack sections vertically */
+  }
+
+  .diper-section div {
+    width: 100%; /* Full width for each section */
+  }
+
+  .diper-image-container {
+    flex-direction: column; /* Stack images vertically */
+    gap: 20px; /* Maintain gap between stacked images */
+  }
+
+  .diper-item {
+    width: 100%; /* Full width for each image container */
+  }
+
+  .diper-image {
+    height: auto; /* Allow height to adjust dynamically */
+  }
+
+  .diper-text h3 {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    padding: 8px 12px; /* Adjust padding for compactness */
+  }
+
+  .diper-section ul {
+    margin-left: 0; /* Remove additional left margin */
+    padding-left: 15px; /* Add balanced padding for bullets */
+  }
+
+  .diper-section li {
+    font-size: 0.9rem; /* Slightly reduce font size for better fit */
+    margin-bottom: 8px; /* Adjust spacing between list items */
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .diper-container h1 {
+    font-size: 1.8rem; /* Reduce heading size */
+  }
+
+  .diper-container h1::after {
+    width: 60px; /* Adjust underline length */
+  }
+
+  .diper-image {
+    height: auto; /* Ensure images resize dynamically */
+    box-shadow: none; /* Simplify design for smaller screens */
+  }
+
+  .diper-text h3 {
+    font-size: 0.9rem; /* Compact heading font */
+    padding: 6px 10px; /* Smaller padding */
+  }
+
+  .diper-text ul {
+    padding-left: 10px; /* Compact bullet spacing */
+  }
+}

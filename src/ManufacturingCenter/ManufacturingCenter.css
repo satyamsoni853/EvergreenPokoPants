@@ -1,0 +1,57 @@
+.manufacturing-container {
+  padding: 20px;
+}
+
+.manufacturing-divider {
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 20px 0;
+}
+
+.manufacturing-heading {
+  font-size: 2.5rem;
+  color: black;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.location-section {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.location-heading {
+  font-size: 2rem;
+  color: #00818a;
+  margin-bottom: 10px;
+}
+
+.location-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.location-address {
+  font-style: normal;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.location-link {
+  font-size: 1rem;
+  color: #00818a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.location-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}

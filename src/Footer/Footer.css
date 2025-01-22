@@ -1,0 +1,46 @@
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 15vh;
+  background-color: black;
+  color: white;
+}
+
+/* Style for social icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 2rem;
+}
+
+.social-icons a:hover {
+  color: orange;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack items vertically */
+    height: auto; /* Adjust height */
+    padding: 20px; /* Add padding for smaller screens */
+    text-align: center; /* Center-align text */
+  }
+
+  .social-icons {
+    gap: 15px; /* Reduce gap between icons */
+    font-size: 1.8rem; /* Slightly reduce icon size */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-container {
+    padding: 15px; /* Further reduce padding */
+  }
+
+  .social-icons {
+    gap: 10px; /* Minimize gap for very small screens */
+    font-size: 1.5rem; /* Reduce icon size further */
+  }
+}

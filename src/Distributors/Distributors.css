@@ -1,0 +1,111 @@
+/* General Styles */
+.distributors-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+
+.distributors-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+  position: relative;
+}
+
+.distributors-container h1::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #4CAF50;
+  margin-top: 10px;
+}
+
+.distributor-info {
+  margin-bottom: 20px;
+}
+
+.distributor-info ul {
+  padding-left: 20px;
+  list-style-type: none;
+  line-height: 1.6;
+  align-items: center;
+  text-align: center;
+}
+
+.distributor-info ul li span {
+  font-size: 1.5rem;
+  color: #00818a;
+  font-weight: bold;
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+
+.distributor-info li {
+  margin-bottom: 10px;
+}
+
+.distributors-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+}
+
+.distributor-image {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .distributors-container {
+    padding: 20px;
+  }
+
+  .distributors-container h1 {
+    font-size: 2rem;
+    text-align: center; /* Center align heading on smaller screens */
+  }
+
+  .distributor-info ul li span {
+    font-size: 1.2rem; /* Reduce font size for smaller screens */
+  }
+
+  .distributors-images {
+    gap: 10px; /* Reduce the gap between images */
+  }
+
+  .distributor-image {
+    max-width: 300px; /* Adjust image size */
+  }
+}
+
+@media (max-width: 480px) {
+  .distributors-container {
+    padding: 15px;
+  }
+
+  .distributors-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .distributor-info ul li span {
+    font-size: 1rem; /* Further reduce font size for very small screens */
+  }
+
+  .distributors-images {
+    gap: 5px; /* Further reduce the gap between images */
+  }
+
+  .distributor-image {
+    max-width: 250px; /* Adjust image size for very small screens */
+  }
+}

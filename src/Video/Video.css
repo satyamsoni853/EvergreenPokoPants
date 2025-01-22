@@ -1,0 +1,85 @@
+/* General Responsive Styles */
+.fatory-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+}
+
+.factory-video-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Adjust video for smaller screens */
+.factory-video video {
+  height: 80vh;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.factory-video video:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Adjust heading */
+.factory-video-heading {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+  position: relative;
+}
+
+.factory-video-heading::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #4CAF50;
+  margin-top: 10px;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+  .factory-video-container {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+  }
+
+  .factory-video video {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-width: 600px; /* Limit width */
+  }
+
+  .factory-video-heading {
+    font-size: 2rem; /* Reduce font size for headings */
+    text-align: center; /* Center-align heading */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .factory-video-container {
+    gap: 10px; /* Reduce gap between elements */
+    padding: 15px;
+  }
+
+  .factory-video video {
+    max-width: 100%; /* Ensure it fits the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .factory-video-heading {
+    font-size: 1.8rem; /* Further reduce font size */
+    text-align: center;
+  }
+}

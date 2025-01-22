@@ -1,0 +1,90 @@
+/* Container for the entire slider */
+.slider-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px;
+ 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Heading styling */
+.Benifit-slider-heading {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+  position: relative;
+}
+
+/* Line below the heading */
+.Benifit-slider-heading::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #4CAF50;
+  margin-top: 10px;
+}
+
+/* Wrapper for the images */
+.image-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  overflow: hidden; /* Ensures images don't overflow */
+  transition: transform 0.5s ease-in-out; /* Smooth transition for sliding */
+}
+
+/* Image styling */
+.slider-image {
+  width: 32%; /* Each image takes 1/3 of the available space */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bullet points for each benefit */
+.benefit-section {
+  margin-top: 30px;
+}
+
+.benefit-section h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.benefit-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.benefit-section li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slider-container {
+    padding: 20px;
+  }
+
+  .slider-heading {
+    font-size: 2rem;
+  }
+
+  .image-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .slider-image {
+    width: 100%; /* Images take full width on smaller screens */
+  }
+}

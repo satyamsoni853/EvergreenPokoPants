@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Navbarr {
+  background-color: #ffffff; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  height: 18vh;
+}
+
+.Navbarr ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+
+  margin: 0;
+  padding: 0;
+}
+.logo{
+  border-radius: 20px;
+}
+
+.Navbarr ul li {
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+.Navbarr ul li{
+  text-align: center;
+  align-items: center;
+
+}
+
+
+.Navbarr ul li span:hover {
+  color: orange;
+  
+}
+.Navbarr ul li:hover{
+  color: orange ;
+}
+
+.Navbarr ul li img {
+  height: 160px;
+  width: 180px;
+
+
+}
+
+.Navbarr::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px; /* Adjust height for curve thickness */
+  background: linear-gradient(
+    to right,
+    transparent,
+    orange 50%,
+    transparent
+  ); /* Orange gradient curve */
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0; /* Create the curve */
+}
+.close-barr {
+  align-items: end;
+  justify-content: center;
+  margin-right: 100px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+
+}
+.close-barr li{
+  border-bottom: 2px solid black;
+}
+.logo2{
+  display: none;
+}
+.cimenubarr{
+  display: none;
+}
+/* Responsive design */
+@media (max-width: 768px) {
+ .Navbarr ul li:nth-child(1),
+ .Navbarr ul li:nth-child(2),
+ .Navbarr ul li:nth-child(3),
+ .Navbarr ul li:nth-child(5),
+ .Navbarr ul li:nth-child(6),
+ .Navbarr ul li:nth-child(7){
+  display: none;
+ }
+ .logo{
+  display: none;
+ }
+ .logo2{
+  display: block;
+ }
+ .cimenubarr{
+  display: block;
+ }
+
+
+ .close-barr {
+  margin-right: 30px;
+  
+
+}
+
+}
