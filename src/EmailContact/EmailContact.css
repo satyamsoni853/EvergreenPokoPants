@@ -1,5 +1,7 @@
 .contact-details {
   display: flex;
+  width: 30vw;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   padding: 20px;

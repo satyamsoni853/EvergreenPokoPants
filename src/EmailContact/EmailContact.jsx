@@ -5,8 +5,9 @@ import './EmailContact.css'
 
 function EmailContact() {
   return (
-    <div>
+    <div className='flex items-center justify-center' >
       <div className="contact-details">
+        <h1 className='text-2xl font-bold ' >Contact US On:</h1>
           <h1>
             <p className="desc">
               <BiLogoGmail style={{ color: "#00818a" }} />

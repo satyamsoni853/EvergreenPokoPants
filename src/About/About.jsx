@@ -45,12 +45,14 @@ function About() {
       <div className="certifications-container">
         
         <div>
-          <span>We Are Indimart Certified</span>
+         
           <img src={Certification1} alt="Indimart Certification" />
+          <span>We Are Indimart Certified</span>
         </div>
         <div>
-          <span>We are Zed Certified</span>
+         
           <img src={Certification2} alt="Zed Certification" />
+          <span>We are Zed Certified</span>
         </div>
       </div>
       </div>

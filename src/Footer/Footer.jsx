@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css"; // External CSS for styling
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { MdOutlineLocalMall } from "react-icons/md";
 
 function Footer() {
   return (
@@ -16,8 +17,8 @@ function Footer() {
         >
           <FaFacebook />
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <FaTwitter />
+        <a href="https://IndiaMART.in/Qj97y8Xn" target="_blank" rel="noopener noreferrer">
+          <MdOutlineLocalMall />
         </a>
         <a
           href="https://instagram.com"
