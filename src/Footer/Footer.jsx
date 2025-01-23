@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css"; // External CSS for styling
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { MdOutlineLocalMall } from "react-icons/md";
 import { Link } from "react-router-dom";
 
@@ -9,8 +9,8 @@ function Footer() {
     <div className="footer-container">
       {/* Added Product and Contact options */}
       <div className="footer-top">
-        <Link to="/Product" className="text-white text-xl transition-colors duration-300 hover:text-green-500" >Product</Link>
-        <Link to="/contact" className="text-white text-xl transition-colors duration-300 hover:text-green-500" >Contact</Link>
+        <Link to="/Product" className="text-orange-500 text-xl transition-colors duration-300 hover:text-green-800" >Product</Link>
+        <Link to="/contact" className="text-green-500 text-xl transition-colors duration-300 hover:text-orange-800" >Contact</Link>
       </div>
 
       <div className="footer-bottom">
