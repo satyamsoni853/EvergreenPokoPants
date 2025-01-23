@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 import React from 'react'
-import './gif.css'
+import './Gif.css'
 
 import img2 from "./img2.png";
 import img3 from "./img3.png";
