@@ -1,10 +1,11 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import Padsimage1 from './ProductPad1.jpg'
-import Padsimage2 from './ProductPad2.jpg'
-import Padsimage3 from './ProductPad3.jpg'
-import Padsimage4 from './ProductPad4.jpg'
-import Padsimage5 from './ProductPad5.jpg'
-import Padsimage6 from './ProductPadcombo.jpg'
+import Padsimage2 from './Productpad2.jpg'
+import Padsimage3 from './Productpad3.jpg'
+import Padsimage4 from './Productpad4.jpg'
+import Padsimage5 from './Productpad5.jpg'
+import Padsimage6 from './Productpadcombo.jpg'
 
 
 function ProductPads() {
