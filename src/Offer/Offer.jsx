@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import './offer.css'
+import './Offer.css'
 import Offer1 from '../Images/offer1.jpg'
 import Offer2 from '../Images/offer2.jpg'
 import Offer3 from '../Images/offer3.jpg'
