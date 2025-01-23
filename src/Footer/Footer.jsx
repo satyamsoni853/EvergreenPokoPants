@@ -6,8 +6,18 @@ import { MdOutlineLocalMall } from "react-icons/md";
 function Footer() {
   return (
     <div className="footer-container">
+      {/* Added Product and Contact options */}
+      <div className="footer-top">
+        <a href="/product" className="footer-link">
+          Product
+        </a>
+        <a href="/contact" className="footer-link">
+          Contact
+        </a>
+      </div>
+
       <div className="footer-bottom">
-        <p>&copy; 2025 Your Company. All rights reserved.</p>
+        <p>&copy; 2025 Evergreenccare. All rights reserved.</p>
       </div>
       <div className="social-icons">
         <a
@@ -27,7 +37,6 @@ function Footer() {
         >
           <FaInstagram />
         </a>
-       
       </div>
     </div>
   );
