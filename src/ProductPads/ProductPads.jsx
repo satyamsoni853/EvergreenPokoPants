@@ -1,10 +1,10 @@
 import React from "react";
-import Padsimage1 from '../ProductImage/Pad1.jpg'
-import Padsimage2 from '../ProductImage/Pad2.jpg'
-import Padsimage3 from '../ProductImage/Pad3.jpg'
-import Padsimage4 from '../ProductImage/Pad4.jpg'
-import Padsimage5 from '../ProductImage/Pad5.jpg'
-import Padsimage6 from '../ProductImage/Padcombo.jpg'
+import Padsimage1 from './ProductPad1.jpg'
+import Padsimage2 from './ProductPad2.jpg'
+import Padsimage3 from './ProductPad3.jpg'
+import Padsimage4 from './ProductPad4.jpg'
+import Padsimage5 from './ProductPad5.jpg'
+import Padsimage6 from './ProductPadcombo.jpg'
 
 
 function ProductPads() {

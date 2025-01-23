@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import "./Pad.css";
-import Pad1 from "./pad1.jpg";
-import Pad2 from "./pad2.jpg";
-import Pad3 from "./pad3.jpg";
-import Pad4 from "./pad4.jpg";
+import Pad1 from "./Poosterpad1.jpg";
+import Pad2 from "./Poosterpad2.jpg";
+import Pad3 from "./Poosterpad3.jpg";
+import Pad4 from "./Poosterpad4.jpg";
 import { Link } from "react-router-dom";
 
 function Pad() {
