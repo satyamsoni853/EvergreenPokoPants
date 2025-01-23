@@ -73,19 +73,50 @@
   border-radius: 50% 50% 0 0 / 100% 100% 0 0; /* Create the curve */
 }
 .close-barr {
-  align-items: end;
-  justify-content: center;
-  margin-right: 100px;
-  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-
-
+  align-items: flex-end; /* Center items horizontally */
+  justify-content: flex-end; /* Center items vertically */
+  font-size: 1.5rem;
+  z-index: 5;
+  gap: 20px; /* Space between menu items */
+  padding: 20px;
+  background-color: #d3d3d3; /* Light gray background */
+  border-radius: 10px; /* Optional: add rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: add subtle shadow */
+  width: 100%; /* Adjust width based on content */
 }
-.close-barr li{
-  border-bottom: 2px solid black;
+
+.close-barr li {
+  list-style: none; /* Remove bullet points */
+  width: 100%; /* Take full width */
+  padding: 10px 20px; /* Add padding around text */
+  font-weight: bold; /* Make text bold */
+  background-color: transparent; /* Transparent background */
+  color: black; /* Text color */
+  text-align: center; /* Center the text */
+  cursor: pointer;
+  position: relative; /* For border positioning */
 }
+
+.close-barr li::after {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Position line at the bottom */
+  left: 0;
+  width: 100%; /* Take full width */
+  height: 2px; /* Thickness of the line */
+  background-color: black; /* Line color */
+}
+
+.close-barr li:hover {
+  color: orange; /* Change text color on hover */
+}
+
+.close-barr li:hover::after {
+  background-color: orange; /* Change line color on hover */
+}
+
 .logo2{
   display: none;
 }
