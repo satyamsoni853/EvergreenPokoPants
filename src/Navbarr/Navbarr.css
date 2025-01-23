@@ -72,6 +72,13 @@
   ); /* Orange gradient curve */
   border-radius: 50% 50% 0 0 / 100% 100% 0 0; /* Create the curve */
 }
+img, svg, video, canvas, audio, iframe, embed, object {
+  font-size: 1.4rem;
+  display: block;
+  vertical-align: top;
+
+}
+
 .close-barr {
   display: flex;
   flex-direction: column;
