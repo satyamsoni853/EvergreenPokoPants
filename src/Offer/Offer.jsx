@@ -21,7 +21,7 @@ function Offer() {
       </div>
       <div className="offer-card">
         <img src={Offer3} alt="Offer 3" className="offer-image" />
-        <div className="offer-description">Free Shipping on Orders Above $50</div>
+        <div className="offer-description">Free Shipping on Orders Above ₹999</div>
       </div>
       <div className="offer-card">
         <img src={Offer4} alt="Offer 4" className="offer-image" />

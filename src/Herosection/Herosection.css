@@ -81,6 +81,10 @@
     height: 120px;
     width: 120px;
   }
+  
+  .gif-images img:nth-child(4){
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {

@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function Diper() {
   return (
     <div className="diper-container">
-      <h1>baby Diper Section</h1>
+      <h1>baby Diaper Section</h1>
       <div className="diper-section">
         <div>
           <ul>
