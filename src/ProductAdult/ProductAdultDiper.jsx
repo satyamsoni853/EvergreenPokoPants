@@ -7,7 +7,7 @@ function ProductAdultDiper() {
   return (
     <div>
       <div id="header">
-        <h1>Our Adult Diaper Section in the Professional World</h1>
+        <h1>Our Adult Diaper Section </h1>
       </div>
       <div className="container">
         <div className="card">

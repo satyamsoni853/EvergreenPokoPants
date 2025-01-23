@@ -12,7 +12,7 @@ function ProductPads() {
   return (
     <div>
       <div id="header">
-        <h1>Our Pads Section in the Professional World</h1>
+        <h1>Our Pads Section </h1>
       </div>
       <div className="container">
         <div className="card">
